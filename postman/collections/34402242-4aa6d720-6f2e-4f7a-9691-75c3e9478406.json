@@ -33,7 +33,74 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "34402242-d8e238eb-6497-4f83-8f3a-42f8f8e2599f",
+					"name": "GET",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://postman-echo.com/get?secret={{vault:secret}}",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"get"
+							],
+							"query": [
+								{
+									"key": "secret",
+									"value": "{{vault:secret}}",
+									"description": "This value should be retrieved from Azure Key Vault: QA 123"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "317"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"13d-p52rQ+RN+/Hhzp4Wb2A53yJGR70\""
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "set-cookie",
+							"value": "sails.sid=s%3Arbru0WvsP7flzQ5kgsp9azP_YgASh9lT.jA%2FNZaRx%2F2BgPBPcjXR%2FHH8N5J5e6jcutQ%2BBy0v812o; Path=/; HttpOnly"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 09 Jul 2025 12:26:52 GMT"
+						},
+						{
+							"key": "x-envoy-upstream-service-time",
+							"value": "6"
+						},
+						{
+							"key": "server",
+							"value": "istio-envoy"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"args\": {\n        \"secret\": \"rwfreg\"\n    },\n    \"headers\": {\n        \"host\": \"postman-echo.com\",\n        \"user-agent\": \"PostmanRuntime/7.44.1\",\n        \"accept\": \"*/*\",\n        \"cache-control\": \"no-cache\",\n        \"postman-token\": \"f99f419c-3d6a-4266-bc4d-139518c2b0ac\",\n        \"accept-encoding\": \"gzip, deflate, br\",\n        \"x-forwarded-proto\": \"https\"\n    },\n    \"url\": \"https://postman-echo.com/get?secret=rwfreg\"\n}"
+				}
+			]
 		},
 		{
 			"name": "POST",
