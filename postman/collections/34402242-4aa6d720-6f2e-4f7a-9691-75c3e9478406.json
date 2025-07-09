@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "34402242-4aa6d720-6f2e-4f7a-9691-75c3e9478406",
+		"name": "Echo API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"id": "34402242-359063db-ca28-4769-a3cc-5f329314687d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get?secret={{vault:secret}}",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "secret",
+							"value": "{{vault:secret}}",
+							"description": "This value should be retrieved from Azure Key Vault: QA 123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"id": "34402242-fb47ae17-ade1-49e1-9d48-dc2745384267",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get?secret={{vault:secret}}",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "secret",
+							"value": "{{vault:secret}}",
+							"description": "This value should be retrieved from Azure Key Vault: QA 123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6d5d2828-6f5e-4d49-85cb-9b55d1fbe096",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "041af470-5121-4e15-822b-94ef26d49e9b",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
