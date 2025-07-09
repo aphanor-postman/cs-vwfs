@@ -130,7 +130,62 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "36511356-e5713380-2184-4e3e-bf0d-4c1e34386615",
+					"name": "POST",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://postman-echo.com/get?secret={{vault:secret}}",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"get"
+							],
+							"query": [
+								{
+									"key": "secret",
+									"value": "{{vault:secret}}",
+									"description": "This value should be retrieved from Azure Key Vault: QA 123"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "set-cookie",
+							"value": "sails.sid=s%3AFTcAcow6PJFnNNwVzJfY8y0nIn9Tjkt4.Mc%2F2iqq6Hj04J6EpRY1KyCdchIVpLRDArk1Ew%2BtOpYM; Path=/; HttpOnly"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 09 Jul 2025 12:30:42 GMT"
+						},
+						{
+							"key": "x-envoy-upstream-service-time",
+							"value": "4"
+						},
+						{
+							"key": "server",
+							"value": "istio-envoy"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				}
+			]
 		}
 	],
 	"event": [
